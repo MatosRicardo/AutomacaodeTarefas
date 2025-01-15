@@ -46,3 +46,29 @@ time.sleep(2)
 
 # Passo 4: Cadastrar 1 produto
 pyautogui.click(x=599, y=280) 
+
+# Codigo
+pyautogui.write("MOLO000251")
+pyautogui.press("tab")
+# Marca
+pyautogui.write("Logitech")
+pyautogui.press("tab")
+# Tipo
+pyautogui.write("Mouse")
+pyautogui.press("tab")
+# Categoria
+pyautogui.write("1")
+pyautogui.press("tab")
+# Preço
+pyautogui.write("25.95")
+pyautogui.press("tab")
+#Custo
+pyautogui.write("6.50")
+pyautogui.press("tab")
+# Obs
+pyautogui.write("")
+pyautogui.press("tab")
+
+pyautogui.press("enter") # Apertar o botão de enviar
+
+

@@ -35,6 +35,7 @@ pyautogui.press("tab")  # Passa para a senha
 pyautogui.write("123456")
 pyautogui.press("tab") # Passa para o botão de "login"
 pyautogui.press("enter")
+
 # Passo 3: Importar a base de dados dos produtos
 import pandas
 
@@ -45,30 +46,50 @@ print(tabela)
 time.sleep(2)
 
 # Passo 4: Cadastrar 1 produto
-pyautogui.click(x=599, y=280) 
 
-# Codigo
-pyautogui.write("MOLO000251")
-pyautogui.press("tab")
-# Marca
-pyautogui.write("Logitech")
-pyautogui.press("tab")
-# Tipo
-pyautogui.write("Mouse")
-pyautogui.press("tab")
-# Categoria
-pyautogui.write("1")
-pyautogui.press("tab")
-# Preço
-pyautogui.write("25.95")
-pyautogui.press("tab")
-#Custo
-pyautogui.write("6.50")
-pyautogui.press("tab")
-# Obs
-pyautogui.write("")
-pyautogui.press("tab")
+for linha in tabela.index:
+    pyautogui.click(x=599, y=280) 
 
-pyautogui.press("enter") # Apertar o botão de enviar
+    # Codigo
+    codigo = tabela.loc[linha, "codigo"]
+    pyautogui.write(str(codigo))
+    pyautogui.press("tab")
+    
+    # Marca
+    marca = tabela.loc[linha, "marca"]
+    pyautogui.write(str(marca))
+    pyautogui.press("tab")
+    
+    # Tipo
+    tipo = tabela.loc[linha, "tipo"]
+    pyautogui.write(str(tipo))
+    pyautogui.press("tab")
+    
+    # Categoria
+    categoria = tabela.loc[linha, "categoria"]
+    pyautogui.write(str(categoria))
+    pyautogui.press("tab")
+    
+    # Preço
+    preco_unitario = tabela.loc[linha, "preco_unitario"]
+    pyautogui.write(str(preco_unitario))
+    pyautogui.press("tab")
+    
+    #Custo
+    custo = tabela.loc[linha, "custo"]
+    pyautogui.write(str(custo))
+    pyautogui.press("tab")
+    
+    # Obs
+    obs = tabela.loc[linha, "obs"]
+    pyautogui.write(str(obs))
+    pyautogui.press("tab")
+
+    pyautogui.press("enter") # Apertar o botão de enviar
+
+    # Scrool para cima, número positivo
+    # Scroll para baixo,  número negativo
+    pyautogui.scroll(5000) 
 
 
+# Passo 5: Repetir o passo 4 em todos os outros produtos automaticamente

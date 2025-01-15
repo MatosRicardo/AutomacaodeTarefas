@@ -35,3 +35,14 @@ pyautogui.press("tab")  # Passa para a senha
 pyautogui.write("123456")
 pyautogui.press("tab") # Passa para o botão de "login"
 pyautogui.press("enter")
+# Passo 3: Importar a base de dados dos produtos
+import pandas
+
+tabela = pandas.read_csv("produtos.csv")
+print(tabela)
+
+  
+time.sleep(2)
+
+# Passo 4: Cadastrar 1 produto
+pyautogui.click(x=599, y=280) 

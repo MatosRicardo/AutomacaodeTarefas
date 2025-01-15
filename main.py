@@ -28,9 +28,10 @@ pyautogui.press("enter")
 time.sleep(3)
 
 # Passo 2: Fazer Login
-pyautogui.click(x=670, y=391)
+pyautogui.click(x=670, y=391) # Clica na aba de e-mail com a posição do mouse
 
 pyautogui.write("dragonballzgtx32@gmail.com")
-pyautogui.press("tab")
+pyautogui.press("tab")  # Passa para a senha
 pyautogui.write("123456")
+pyautogui.press("tab") # Passa para o botão de "login"
 pyautogui.press("enter")

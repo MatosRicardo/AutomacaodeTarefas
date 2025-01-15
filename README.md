@@ -14,6 +14,7 @@ Este projeto foi desenvolvido para automatizar tarefas repetitivas e aumentar a 
 - Python 3.12
 - Bibliotecas: 
   - `pandas` (manipulação de dados)
+  - `pyautogui` (controle do mouse e teclado)
 
 ## 📦 Como Usar
 

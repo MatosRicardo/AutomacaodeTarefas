@@ -82,7 +82,8 @@ for linha in tabela.index:
     
     # Obs
     obs = tabela.loc[linha, "obs"]
-    pyautogui.write(str(obs))
+    if obs != "nan":
+      pyautogui.write(str(obs))
     pyautogui.press("tab")
 
     pyautogui.press("enter") # Apertar o botão de enviar
@@ -93,3 +94,4 @@ for linha in tabela.index:
 
 
 # Passo 5: Repetir o passo 4 em todos os outros produtos automaticamente
+# Feito

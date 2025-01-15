@@ -11,11 +11,9 @@ Este projeto foi desenvolvido para automatizar tarefas repetitivas e aumentar a 
 
 ## 🛠️ Tecnologias Utilizadas
 
-- Python 3.x
+- Python 3.12
 - Bibliotecas: 
   - `pandas` (manipulação de dados)
-  - `smtplib` (envio de e-mails)
-  - `schedule` (agendamento de tarefas)
 
 ## 📦 Como Usar
 

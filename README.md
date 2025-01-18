@@ -1,4 +1,4 @@
-# Automação de Tarefas em Python - Jornada Python
+# Automação de Tarefas em Python - Jornada Python 1
 
 Este projeto foi desenvolvido para automatizar tarefas repetitivas e aumentar a produtividade. Utilizando **Python** e bibliotecas específicas, é possível realizar operações de forma eficiente e customizável.
 
